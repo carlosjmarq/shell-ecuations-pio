@@ -57,7 +57,7 @@ function App() {
         newErrors.push("Cable spacing values must be positive");
       }
       if (inputs.d <= 0)
-        newErrors.push("Ground conductor diameter must be positive");
+        newErrors.push("geometric mean sheath diameter must be positive");
       if (inputs.r_g <= 0)
         newErrors.push("Ground conductor radius must be positive");
 
@@ -167,7 +167,7 @@ function App() {
                     value={inputs.d}
                     onChange={(value) => handleInputChange("d", value)}
                     unit="m"
-                    description="Ground conductor diameter"
+                    description="geometric mean sheath diameter"
                   />
                 </div>
               </div>
